@@ -1,0 +1,55 @@
+@media (min-width: 300px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+  }
+}
+
+@media (min-width: 992px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #background_menu_drop:hover {
+    font-weight: bold;
+    background: var(--bs-yellow);
+    border-style: solid;
+    box-shadow: inset 2px 2px;
+  }
+}
+

@@ -1,0 +1,42 @@
+@media (min-width: 300px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 300px) {
+  #background_menu:active {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 576px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 768px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 992px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 1200px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
+@media (min-width: 1400px) {
+  #background_menu:hover {
+    background: linear-gradient(var(--bs-blue), var(--bs-dark));
+  }
+}
+
