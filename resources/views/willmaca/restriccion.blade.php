@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Error 404</title>
+    <meta name="" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Pretty-Product-List-v12.css">
+    <link rel="stylesheet" href="assets/css/Background-Image---Parallax---No-Text.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Chat.css">
+    <link rel="stylesheet" href="assets/css/Community-ChatComments.css">
+    <link rel="stylesheet" href="assets/css/Dark-footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/Drag-Drop-File-Input-Upload.css">
+    <link rel="stylesheet" href="assets/css/droplista.css">
+    <link rel="stylesheet" href="assets/css/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10-1.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Landing-Page---Parallax-Background---Logo-Heading-ButtonGIF.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic.css">
+    <link rel="stylesheet" href="assets/css/mascota.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/paragrafo_negro.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scrolling-Horizontal-plus-Vertical.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/Simple-Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos-1.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    @if(Auth::check() && Auth::user()->roles == 1)
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <span><strong>NO TIENES PERMISO PARA ENTRAR A ESTA PAGINA, TU NIVEL ES 1</strong>
+                <br>
+            </span>
+        </div>
+    @endif
+
+    @if(!Auth::check())
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <span><strong>NO TIENES PERMISO PARA ENTRAR A ESTA PAGINA, INICIA SESSIÓN PRIMERO</strong>
+                <br>
+            </span>
+        </div>
+    @endif
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/Animated-Pretty-Product-List-v12.js"></script>
+    <script src="assets/js/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.js"></script>
+    <script src="assets/js/Grid-and-List-view-V10.js"></script>
+    <script src="assets/js/MUSA_carousel-extended.js"></script>
+    <script src="assets/js/Parallax-Scrolling-Horizontal-plus-Vertical.js"></script>
+</body>
+
+</html>

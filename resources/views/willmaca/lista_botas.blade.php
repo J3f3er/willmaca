@@ -57,15 +57,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($producto as $product)
                             <tr style="min-width: auto;max-width: 100%;">
-                                @foreach($producto as $product)
                                 <td>{{ $product->nombre }}</td>
                                 <td>{{ $product->precio }}</td>
                                 <td>{{ $product->categoria }}</td>
                                 <td>{{ $product->descripcion }}</td>
                                 <th>Acción</th>
-                                @endforeach
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

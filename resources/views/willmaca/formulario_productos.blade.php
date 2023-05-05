@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>proyecto_willmaca</title>
-    <link rel="icon" type="image/jpeg" sizes="150x150" href="../../assets/img/314932241_3575335546035850_3573432191079918083_n.jpg?h=2f67c1992273a49325bfdf8d546cb39b">
-    <link rel="icon" type="image/jpeg" sizes="150x150" href="../../assets/img/314932241_3575335546035850_3573432191079918083_n.jpg?h=2f67c1992273a49325bfdf8d546cb39b">
-    <link rel="icon" type="image/jpeg" sizes="150x150" href="../../assets/img/314932241_3575335546035850_3573432191079918083_n.jpg?h=2f67c1992273a49325bfdf8d546cb39b">
-    <link rel="icon" type="image/jpeg" sizes="150x150" href="../../assets/img/314932241_3575335546035850_3573432191079918083_n.jpg?h=2f67c1992273a49325bfdf8d546cb39b">
-    <link rel="icon" type="image/jpeg" sizes="150x150" href="../../assets/img/314932241_3575335546035850_3573432191079918083_n.jpg?h=2f67c1992273a49325bfdf8d546cb39b">
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css?h=db809bb2e50701aac4adf16542874740">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
-    <link rel="stylesheet" href="../../assets/css/Background-Image---Parallax---No-Text.css?h=613c04c837f8f36188e28873796924a0">
-    <link rel="stylesheet" href="../../assets/css/Drag-Drop-File-Input-Upload.css?h=ff27182496a726ff7d29f5ad440baca8">
-    <link rel="stylesheet" href="../../assets/css/droplista.css?h=3d2ef9d6704ae49b2fcaf20010f62b55">
-    <link rel="stylesheet" href="../../assets/css/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.css?h=0e87b50b50331132a2fddc30af683913">
-    <link rel="stylesheet" href="../../assets/css/Grid-and-List-view-V10-1.css?h=0afe662e8b70bbd5cd39e3765bd02184">
-    <link rel="stylesheet" href="../../assets/css/Grid-and-List-view-V10.css?h=1f72c4994fa59c09852043238af38856">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../../assets/css/Landing-Page---Parallax-Background---Logo-Heading-ButtonGIF.css?h=e5f0bfafa428a31ce7cc96e59deb1621">
-    <link rel="stylesheet" href="../../assets/css/mascota.css?h=a83916ee4e928e978394dbeef74bf7ee">
-    <link rel="stylesheet" href="../../assets/css/menu.css?h=d9e9ab0d76811a66439c929e0ac0a162">
-    <link rel="stylesheet" href="../../assets/css/paragrafo_negro.css?h=ac99cf4705c25481956ad4d80d97934f">
-    <link rel="stylesheet" href="../../assets/css/Parallax-Scroll-Effect.css?h=9a7e289f5a8ba10882b8f0afdca5270d">
-    <link rel="stylesheet" href="../../assets/css/Parallax-Scrolling-Horizontal-plus-Vertical.css?h=b392fc1e2a3f47cc70825db427224683">
-    <link rel="stylesheet" href="../../assets/css/Projects-Grid-Horizontal.css?h=4f3cfa46e40e236365345fc77963f4b8">
-    <link rel="stylesheet" href="../../assets/css/Responsive-Form-1.css?h=c6261da663e77c52ac9a03330e69905e">
-    <link rel="stylesheet" href="../../assets/css/Responsive-Form.css?h=d96b666ea3b273588c2e8e3b011cf2f9">
-    <link rel="stylesheet" href="../../assets/css/Simple-galeria-de-productos-1.css?h=3807ef8c506528159f8393ad052d2c6e">
-    <link rel="stylesheet" href="../../assets/css/Simple-galeria-de-productos.css?h=bea673c0b5557f2b7e8f27449366bde4">
-    <link rel="stylesheet" href="../../assets/css/sticky-dark-top-nav-with-dropdown.css?h=2bf54df413781017b12488f807b9411c">
-    <link rel="stylesheet" href="../../assets/css/styles.css?h=d41d8cd98f00b204e9800998ecf8427e">
-</head>
+@include('willmaca.admin.head_admin')
 
 <body>
     <!-- Start: sticky dark top nav with dropdown -->
 
-        @include('willmaca.menu_admin')
+        @include('willmaca.admin.menu_admin')
 
 
     <!-- Start: Responsive Form -->
@@ -59,7 +26,7 @@
         </div>
     @endif
 
-            <form action="{{ route('regitro.productos') }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('registro.productos') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group mb-3">
                     <div id="formdiv">

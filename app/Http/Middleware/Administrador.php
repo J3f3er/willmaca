@@ -4,8 +4,10 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controllers\Middleware;
+use Illuminate\Support\Facades\Auth;
 
-class Administrador
+class Administrador extends Middleware
 {
     /**
      * Handle an incoming request.
@@ -14,8 +16,15 @@ class Administrador
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
-    {
-        return $next($request);
+    public function handle(Request $request, Closure $next, $role)
+    { 
+        if(!Auth::check()) {
+            return redirect()->route('willmaca.index');
+        }
+        elseif(Auth::user()->roles == 1) {
+            return $next($request);
+        }
+  
     }
+
 }

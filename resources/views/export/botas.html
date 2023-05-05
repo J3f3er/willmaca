@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>proyecto_willmaca</title>
+    <meta name="" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Pretty-Product-List-v12.css">
+    <link rel="stylesheet" href="assets/css/Background-Image---Parallax---No-Text.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Chat.css">
+    <link rel="stylesheet" href="assets/css/Community-ChatComments.css">
+    <link rel="stylesheet" href="assets/css/Dark-footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/Drag-Drop-File-Input-Upload.css">
+    <link rel="stylesheet" href="assets/css/droplista.css">
+    <link rel="stylesheet" href="assets/css/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10-1.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Landing-Page---Parallax-Background---Logo-Heading-ButtonGIF.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic.css">
+    <link rel="stylesheet" href="assets/css/mascota.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/paragrafo_negro.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scrolling-Horizontal-plus-Vertical.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/Simple-Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos-1.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top textwarning bg-dark bg-gradient text-center text-warning navbar-fixed-top navigation-clean-button" style="background: var(--bs-dark);">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" href="#"><span class="bounce animated"><img src="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">WillMaca</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" id="button_expand"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link active border-1 border-secondary" id="background_menu" href="{{route('willmaca.index')}}" style="color: var(--bs-white);text-align: center;font-weight: bold;">Inicio</a></li>
+                    <li class="nav-item dropdown border-1 border-secondary" id="background_menu"><a class="dropdown-toggle nav-link fw-bold text-center border rounded border-1 border-secondary shadow-lg" aria-expanded="false" data-bs-toggle="dropdown" id="background_menu" href="#" style="color: var(--bs-white);">Productos</a>
+                        <div class="dropdown-menu border-1 border-secondary" id="background_menu-4"><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.guantes') }}">Guantes</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.tapa_bocas') }}">Tapa Bocas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.botas') }}">Botas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.lentes') }}">Lentes</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.trajes') }}">Trajes de Bio Seguridad</a></div>
+                    </li>
+                    <li class="nav-item border-1 border-secondary" id="background_menu-8"><a class="nav-link text-center border-1 border-secondary" id="background_menu" style="color: var(--bs-white);box-shadow: inset 0px 0px;font-weight: bold;" data-bs-target="#modal" data-bs-toggle="modal">Misión</a></li>
+                    <li class="nav-item text-center border-1 border-secondary" id="background_menu-10" style="box-shadow: 0px 0px var(--bs-white);"><a class="nav-link text-center border-1 border-secondary" id="background_menu" href="#vision" style="color: var(--bs-white);box-shadow: inset 0px 0px var(--bs-white);font-weight: bold;">Visión</a></li>
+                    <li class="nav-item text-center border-1 border-secondary" id="background_menu-12" style="box-shadow: 0px 0px var(--bs-white);"><a class="nav-link text-center border-1 border-secondary" id="background_menu" href="#quienes_somos" style="color: var(--bs-white);box-shadow: inset 0px 0px var(--bs-white);font-weight: bold;">Quienes Somos</a></li>
+                    <li class="nav-item text-center border-1 border-secondary" style="box-shadow: 0px 0px var(--bs-white);"><a class="nav-link text-center border-1 border-secondary" id="background_menu" href="#contactanos" style="color: var(--bs-white);box-shadow: inset 0px 0px var(--bs-white);font-weight: bold;">Contáctanos</a></li>
+                    <li class="nav-item text-center border-1 border-secondary" style="box-shadow: 0px 0px var(--bs-white);"><a class="nav-link text-center border-1 border-secondary" id="background_menu" href="#" style="color: var(--bs-white);box-shadow: inset 0px 0px var(--bs-white);font-weight: bold;">Log In</a></li>
+                    <li class="nav-item text-center border-1 border-secondary" id="background_menu" style="box-shadow: inset 0px 0px;"><a class="btn btn-light text-center action-button" role="button" href="signup.html" style="color: var(--bs-white);box-shadow: inset 0px 0px var(--bs-white);">Sign Up</a></li>
+                </ul>
+                <p class="ms-auto navbar-text actions"> </p>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="container_marquee" style="padding-right: 0px;padding-left: 0px;">
+        <div class="row" style="color: var(--bs-blue);"><div>
+<marquee behavior="alternate" bgcolor="#212529" direction="right" style="color: #ffffff; font-size: 20px; font-weight: bolder; line-height: 150%; text-shadow: #000000 0px 1px 1px;"onmousedown="this.stop()" onmouseup="this.start()">Salmo 127:1= Si Dios no construye la casa, de nada sirve que se esfuercen los constructores.</marquee>
+</div></div>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 data-aos="zoom-in" data-aos-duration="2050" data-aos-once="true">Botas</h2>
+                <p data-aos="zoom-in" data-aos-duration="2050" data-aos-once="true" class="w-lg-50">Estas botas logran proteger los dedos de las caídas de algún material, de la contaminación con agentes químicos, las descargas eléctricas, así como otros riesgos laborales. Si tu profesión requiere de un calzado específico, estás obligado a cumplir con su uso.</p>
+            </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2">
+            <div class="col -auto col-xxl-4" data-aos="fade-left" data-aos-duration="950" data-aos-offset="90px" data-aos-delay="950" data-aos-once="true">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4>Lorem libero donec</h4>
+                        <p style="width: 99%;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div><button class="btn btn-primary btn-lg active" data-bss-hover-animate="rubberBand" type="button" style="width: 99%;" data-bs-target="#modal_info" data-bs-toggle="modal">Mas Información</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4>Lorem libero donec</h4>
+                        <p style="width: 99%;height: 100%;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4>Lorem libero donec</h4>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4>Lorem libero donec</h4>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade text-capitalize fs-3 fw-normal text-center text-primary bg-primary border-2 border-primary shadow float-start" role="dialog" tabindex="-1" id="modal_mision" style="height: 100%;">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Misión</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><br>En Willmaca seguridad, analizamos el riesgo de cada empresa, comercio, negocio y hogar para diseñar la seguridad personalizada. Ofrecemos&nbsp; suministros industriales, con una amplia línea de productos de seguridad industrial y protección personal. En Willmaca no eres un cliente más, eres un amigo que requiere atención y asesoría.&nbsp;<br><br></p>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal_info">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Información de {{ $botas-&gt;nombre }}</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>{{ $botas-&gt;descripcion }}</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-success active text-capitalize fs-4 fw-bolder text-center border rounded-0" type="button">Cerrar</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/Animated-Pretty-Product-List-v12.js"></script>
+    <script src="assets/js/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.js"></script>
+    <script src="assets/js/Grid-and-List-view-V10.js"></script>
+    <script src="assets/js/MUSA_carousel-extended.js"></script>
+    <script src="assets/js/Parallax-Scrolling-Horizontal-plus-Vertical.js"></script>
+</body>
+
+</html>

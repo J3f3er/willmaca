@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="color: var(0,0,0);">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        
+        <title>Admin: {{Auth::user()->name}} WillMaca Seguridad</title>
+        
+        @include('willmaca.admin.head_admin')
+        
+        </head>
+
+<body>
+    
+    @include('willmaca.admin.menu_admin')
+
+    
+@foreach($categoria as $product)    
+<div class="container py-4 py-xl-5">
+        <div class="row mb-5">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2>{{$product->nombre}}</h2>
+                <p class="w-lg-50">{{$product->descripcion}}</p>
+            </div>
+        </div>
+        @endforeach        
+        
+        @foreach ($producto as $product)
+                
+        <div class="row gy-4 row-cols-1 row-cols-md-2">
+            <div class="col">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="w-100">
+                        <img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="{{asset($product->imagen)}}"></div>
+                    <div class="py-4 py-lg-0 px-lg-4">
+                        <h4><strong>{{$product->nombre}}</strong></h4>
+                        <p>Precio: {{ $product->precio }}</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg active" data-bss-hover-animate="rubberBand" type="button" style="width: 99%;" data-bs-target="#modal_info" data-bs-toggle="modal">Mas Información</button>
+
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal_info">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Información de {{ $product->nombre }}</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>{{ $product->descripcion }}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success active text-capitalize fs-4 fw-bolder text-center border rounded-0" type="button" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach    
+
+        </div>
+    </div><!-- End: Projects Grid Horizontal -->
+    
+    @include('willmaca.admin.admin_script')
+
+</body>
+
+</html>

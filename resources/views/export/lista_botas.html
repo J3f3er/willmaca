@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>proyecto_willmaca</title>
+    <meta name="" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="icon" type="image/jpeg" sizes="150x150" href="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-Pretty-Product-List-v12.css">
+    <link rel="stylesheet" href="assets/css/Background-Image---Parallax---No-Text.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Chat.css">
+    <link rel="stylesheet" href="assets/css/Community-ChatComments.css">
+    <link rel="stylesheet" href="assets/css/Dark-footer-with-social-media-icons.css">
+    <link rel="stylesheet" href="assets/css/Drag-Drop-File-Input-Upload.css">
+    <link rel="stylesheet" href="assets/css/droplista.css">
+    <link rel="stylesheet" href="assets/css/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10-1.css">
+    <link rel="stylesheet" href="assets/css/Grid-and-List-view-V10.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="assets/css/Landing-Page---Parallax-Background---Logo-Heading-ButtonGIF.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Basic.css">
+    <link rel="stylesheet" href="assets/css/mascota.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/paragrafo_negro.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scrolling-Horizontal-plus-Vertical.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="assets/css/Simple-Bootstrap-Chat.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos-1.css">
+    <link rel="stylesheet" href="assets/css/Simple-galeria-de-productos.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-xl sticky-top textwarning bg-dark bg-gradient text-center text-warning navbar-fixed-top navigation-clean-button" style="background: var(--bs-dark);">
+        <div class="container-fluid">
+            <div><a class="navbar-brand" href="#"><span class="bounce animated"><img src="assets/img/314932241_3575335546035850_3573432191079918083_n.jpg">WillMaca</span> </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol" id="button_expand"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link active border-1 border-secondary" id="background_menu" href="{{route('willmaca.index')}}" style="color: var(--bs-white);text-align: center;font-weight: bold;">Inicio</a></li>
+                    <li class="nav-item dropdown border-1 border-secondary" id="background_menu"><a class="dropdown-toggle nav-link fw-bold text-center border rounded border-1 border-secondary shadow-lg" aria-expanded="false" data-bs-toggle="dropdown" id="background_menu" href="#" style="color: var(--bs-white);">Productos</a>
+                        <div class="dropdown-menu border-1 border-secondary" id="background_menu"><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.guantes') }}">Guantes</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.tapa_bocas') }}">Tapa Bocas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.botas') }}">Botas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.lentes') }}"></a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.trajes') }}">Trajes de Bio Seguridad</a></div>
+                    </li>
+                    <li class="nav-item dropdown border-1 border-secondary" id="background_menu"><a class="dropdown-toggle nav-link fw-bold text-center border rounded border-1 border-secondary shadow-lg" aria-expanded="false" data-bs-toggle="dropdown" id="background_menu" href="{{route('willmaca.listado_botas')}}" style="color: var(--bs-white);">Listado</a>
+                        <div class="dropdown-menu border-1 border-secondary" id="background_menu"><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{route('willmaca.listado_guantes')}}">Guantes</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.listado_tapa_bocas') }}">Tapa Bocas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.listado_botas') }}">Botas</a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.lentes') }}"></a><a class="dropdown-item link-light bg-dark bg-gradient border rounded" id="background_menu_drop" href="{{ route('willmaca.listado_trajes') }}">Trajes de Bio Seguridad</a></div>
+                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-center" aria-expanded="false" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="background_menu" href="#">{{ Auth::user()-&gt;name }}</a>
+                        <div class="dropdown-menu dropdown-menu-start dropdown-menu-dark"><a class="dropdown-item" id="background_menu_drop" href="#">First Item</a><a class="dropdown-item" id="background_menu_drop" href="#">Second Item</a><a class="dropdown-item" id="background_menu_drop" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+                <p class="ms-auto navbar-text actions"> </p>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col" style="max-height: 100%;">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr style="min-width: auto;max-width: 100%;">
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Categoría</th>
+                                <th>Descripción</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-capitalize fw-normal text-center">
+                                <td>Cell 1</td>
+                                <td>Cell 1</td>
+                                <td>Cell 1</td>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/Animated-Pretty-Product-List-v12.js"></script>
+    <script src="assets/js/File-Input---Beautiful-Input--Button-Approach-Jasny-Bootstrap.js"></script>
+    <script src="assets/js/Grid-and-List-view-V10.js"></script>
+    <script src="assets/js/MUSA_carousel-extended.js"></script>
+    <script src="assets/js/Parallax-Scrolling-Horizontal-plus-Vertical.js"></script>
+</body>
+
+</html>
